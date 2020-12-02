@@ -54,7 +54,7 @@ jobs:
           at: /tmp
       - run:
           name: install netlify
-          command: npm install netlify-cli -g
+          command: sudo npm install netlify-cli -g
       - run:
           name: Deploy app
           command: deploy --prod --auth $NETLIFY_AUTH_TOKEN --dir /tmp/server-doc --site $NETLIFY_SITE_ID
